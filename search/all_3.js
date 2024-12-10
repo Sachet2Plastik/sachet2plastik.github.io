@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['emplace_5fcomponent_0',['emplace_component',['../classengine_1_1registry.html#aec75106d08efbf5116dc9356bd9995d9',1,'engine::registry']]],
-  ['entity_1',['Entity',['../classEntity.html',1,'Entity'],['../classEntity.html#a9b2c2688843e655fe8e4d8c561b36ee9',1,'Entity::Entity()']]],
-  ['entity_5ft_2',['entity_t',['../classengine_1_1registry.html#ad61369de0ce226bb3c2544ae4666087c',1,'engine::registry']]]
+  ['draw_0',['draw',['../classengine_1_1WindowManager.html#a8470e43784ff1ccbd5d51c3f20219b6d',1,'engine::WindowManager::draw(float const &amp;posx, float const &amp;posy, Drawable &amp;drawable)'],['../classengine_1_1WindowManager.html#aa983ebf5e895e0a1ae2e369a583ac92f',1,'engine::WindowManager::draw(sf::Vector2f const &amp;pos, Drawable &amp;drawable)']]],
+  ['drawable_1',['drawable',['../structcomponent_1_1drawable.html',1,'component']]],
+  ['dt_2',['dt',['../classengine_1_1registry.html#a5b77ad18a2ba814817e6abb6c4425edd',1,'engine::registry']]]
 ];

@@ -83,7 +83,7 @@ $(function() { codefold.init(0); });
   <div class="headertitle"><div class="title">WindowManager.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<a href="WindowManager_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">** EPITECH PROJECT, 2024</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">** R-Type -- Jelly-Engine</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">** File description:</span></div>
@@ -92,48 +92,70 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;SFML/Graphics/RenderWindow.hpp&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;SFML/Window/Keyboard.hpp&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;SFML/Window/Event.hpp&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span>engine</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classengine_1_1WindowManager.html">   18</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classengine_1_1WindowManager.html">WindowManager</a></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classengine_1_1registry.html">registry</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_class" href="classengine_1_1WindowManager.html">WindowManager</a>() : _window(sf::VideoMode(800, 600), <span class="stringliteral">&quot;Window&quot;</span>) { _window.setFramerateLimit(60); };</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_class" href="classengine_1_1WindowManager.html">WindowManager</a>(std::size_t <a class="code hl_class" href="classengine_1_1SparseArray.html">width</a>, std::size_t <a class="code hl_class" href="classengine_1_1SparseArray.html">height</a>, std::string <span class="keyword">const</span> &amp;<a class="code hl_class" href="classengine_1_1SparseArray.html">title</a>) : _window(sf::VideoMode(<a class="code hl_class" href="classengine_1_1SparseArray.html">width</a>, <a class="code hl_class" href="classengine_1_1SparseArray.html">height</a>), <a class="code hl_class" href="classengine_1_1SparseArray.html">title</a>) {};</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_class" href="classengine_1_1WindowManager.html">~WindowManager</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Drawable&gt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">void</span> draw(<span class="keywordtype">float</span> <span class="keyword">const</span> &amp;<a class="code hl_class" href="classengine_1_1SparseArray.html">posx</a>, <span class="keywordtype">float</span> <span class="keyword">const</span> &amp;<a class="code hl_class" href="classengine_1_1SparseArray.html">posy</a>, <a class="code hl_class" href="classengine_1_1SparseArray.html">Drawable</a> &amp;drawable);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        sf::RenderWindow&amp; get_window() { <span class="keywordflow">return</span> _window; };</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordtype">void</span> updateKeyPressed(sf::Keyboard::Key);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">void</span> updateKeyReleased(sf::Keyboard::Key);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        sf::RenderWindow _window;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        std::vector&lt;sf::Keyboard::Key&gt; _pressedKeys;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    };</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;SFML/Graphics/RenderWindow.hpp&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;SFML/Window/Keyboard.hpp&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;SFML/Window/Event.hpp&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>engine</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classengine_1_1WindowManager.html">   30</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classengine_1_1WindowManager.html">WindowManager</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classengine_1_1registry.html">registry</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classengine_1_1WindowManager.html#a6749235b97d99fd37e3364b5028c05f4">   39</a></span>        <a class="code hl_function" href="classengine_1_1WindowManager.html#a6749235b97d99fd37e3364b5028c05f4">WindowManager</a>() : _window(sf::VideoMode(1920, 1080), <span class="stringliteral">&quot;R-Type&quot;</span>) { _window.setFramerateLimit(60); };</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classengine_1_1WindowManager.html#a0edef246cf50ce5fb320641e34a0344b">   49</a></span>        <a class="code hl_function" href="classengine_1_1WindowManager.html#a0edef246cf50ce5fb320641e34a0344b">WindowManager</a>(std::size_t width, std::size_t height, std::string <span class="keyword">const</span> &amp;title, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> framerate) : _window(sf::VideoMode(width, height), title) { _window.setFramerateLimit(framerate); };</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_class" href="classengine_1_1WindowManager.html">~WindowManager</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Drawable&gt;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1WindowManager.html#a8470e43784ff1ccbd5d51c3f20219b6d">draw</a>(<span class="keywordtype">float</span> <span class="keyword">const</span> &amp;posx, <span class="keywordtype">float</span> <span class="keyword">const</span> &amp;posy, Drawable &amp;drawable);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Drawable&gt;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1WindowManager.html#a8470e43784ff1ccbd5d51c3f20219b6d">draw</a>(sf::Vector2f <span class="keyword">const</span> &amp;pos, Drawable &amp;drawable);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classengine_1_1WindowManager.html#a83570d40bd22ce7b44c4e82cec3d0b2b">   78</a></span>        sf::RenderWindow&amp; <a class="code hl_function" href="classengine_1_1WindowManager.html#a83570d40bd22ce7b44c4e82cec3d0b2b">get_window</a>() { <span class="keywordflow">return</span> _window; };</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1WindowManager.html#ac8e6c98d3aea587836f3a74eb320d164">updateKeyPressed</a>(sf::Keyboard::Key);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1WindowManager.html#a8ed13cd2b258c734e08b50b2f7d304b2">updateKeyReleased</a>(sf::Keyboard::Key);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        sf::RenderWindow _window;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        std::vector&lt;sf::Keyboard::Key&gt; _pressedKeys;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    };</div>
 </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Drawable&gt;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> WindowManager::draw(<span class="keywordtype">float</span> <span class="keyword">const</span> &amp;<a class="code hl_class" href="classengine_1_1SparseArray.html">posx</a>, <span class="keywordtype">float</span> <span class="keyword">const</span> &amp;<a class="code hl_class" href="classengine_1_1SparseArray.html">posy</a>, <a class="code hl_class" href="classengine_1_1SparseArray.html">Drawable</a> &amp;drawable)</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        drawable.setPosition(<a class="code hl_class" href="classengine_1_1SparseArray.html">posx</a>,<a class="code hl_class" href="classengine_1_1SparseArray.html">posy</a>);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        _window.draw(drawable);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
-<div class="ttc" id="aclassengine_1_1SparseArray_html"><div class="ttname"><a href="classengine_1_1SparseArray.html">engine::SparseArray</a></div><div class="ttdef"><b>Definition</b> SparseArray.hpp:18</div></div>
-<div class="ttc" id="aclassengine_1_1WindowManager_html"><div class="ttname"><a href="classengine_1_1WindowManager.html">engine::WindowManager</a></div><div class="ttdef"><b>Definition</b> WindowManager.hpp:19</div></div>
-<div class="ttc" id="aclassengine_1_1registry_html"><div class="ttname"><a href="classengine_1_1registry.html">engine::registry</a></div><div class="ttdoc">The registry class manages entities, their components and systems.</div><div class="ttdef"><b>Definition</b> registry.hpp:45</div></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Drawable&gt;</div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classengine_1_1WindowManager.html#a8470e43784ff1ccbd5d51c3f20219b6d">  100</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1WindowManager.html#a8470e43784ff1ccbd5d51c3f20219b6d">WindowManager::draw</a>(<span class="keywordtype">float</span> <span class="keyword">const</span> &amp;posx, <span class="keywordtype">float</span> <span class="keyword">const</span> &amp;posy, Drawable &amp;drawable)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        drawable.setPosition(posx,posy);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        _window.draw(drawable);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
+</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Drawable&gt;</div>
+<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classengine_1_1WindowManager.html#aa983ebf5e895e0a1ae2e369a583ac92f">  108</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classengine_1_1WindowManager.html#a8470e43784ff1ccbd5d51c3f20219b6d">WindowManager::draw</a>(sf::Vector2f <span class="keyword">const</span> &amp;pos, Drawable &amp;drawable)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        drawable.setPosition(pos);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        _window.draw(drawable);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+<div class="ttc" id="aclassengine_1_1WindowManager_html"><div class="ttname"><a href="classengine_1_1WindowManager.html">engine::WindowManager</a></div><div class="ttdoc">WindowManager class to manage the game window.</div><div class="ttdef"><b>Definition</b> WindowManager.hpp:31</div></div>
+<div class="ttc" id="aclassengine_1_1WindowManager_html_a0edef246cf50ce5fb320641e34a0344b"><div class="ttname"><a href="classengine_1_1WindowManager.html#a0edef246cf50ce5fb320641e34a0344b">engine::WindowManager::WindowManager</a></div><div class="ttdeci">WindowManager(std::size_t width, std::size_t height, std::string const &amp;title, unsigned int framerate)</div><div class="ttdoc">Construct a new Window Manager object.</div><div class="ttdef"><b>Definition</b> WindowManager.hpp:49</div></div>
+<div class="ttc" id="aclassengine_1_1WindowManager_html_a6749235b97d99fd37e3364b5028c05f4"><div class="ttname"><a href="classengine_1_1WindowManager.html#a6749235b97d99fd37e3364b5028c05f4">engine::WindowManager::WindowManager</a></div><div class="ttdeci">WindowManager()</div><div class="ttdoc">Construct a new Window Manager object.</div><div class="ttdef"><b>Definition</b> WindowManager.hpp:39</div></div>
+<div class="ttc" id="aclassengine_1_1WindowManager_html_a83570d40bd22ce7b44c4e82cec3d0b2b"><div class="ttname"><a href="classengine_1_1WindowManager.html#a83570d40bd22ce7b44c4e82cec3d0b2b">engine::WindowManager::get_window</a></div><div class="ttdeci">sf::RenderWindow &amp; get_window()</div><div class="ttdoc">Get the underlying sfml render window.</div><div class="ttdef"><b>Definition</b> WindowManager.hpp:78</div></div>
+<div class="ttc" id="aclassengine_1_1WindowManager_html_a8470e43784ff1ccbd5d51c3f20219b6d"><div class="ttname"><a href="classengine_1_1WindowManager.html#a8470e43784ff1ccbd5d51c3f20219b6d">engine::WindowManager::draw</a></div><div class="ttdeci">void draw(float const &amp;posx, float const &amp;posy, Drawable &amp;drawable)</div><div class="ttdoc">Draw a sfml drawable object to the window given it's positions.</div><div class="ttdef"><b>Definition</b> WindowManager.hpp:100</div></div>
+<div class="ttc" id="aclassengine_1_1WindowManager_html_a8ed13cd2b258c734e08b50b2f7d304b2"><div class="ttname"><a href="classengine_1_1WindowManager.html#a8ed13cd2b258c734e08b50b2f7d304b2">engine::WindowManager::updateKeyReleased</a></div><div class="ttdeci">void updateKeyReleased(sf::Keyboard::Key)</div><div class="ttdoc">remove the keyboard key from a vector of all keys pressed</div><div class="ttdef"><b>Definition</b> WindowManager.cpp:24</div></div>
+<div class="ttc" id="aclassengine_1_1WindowManager_html_ac8e6c98d3aea587836f3a74eb320d164"><div class="ttname"><a href="classengine_1_1WindowManager.html#ac8e6c98d3aea587836f3a74eb320d164">engine::WindowManager::updateKeyPressed</a></div><div class="ttdeci">void updateKeyPressed(sf::Keyboard::Key)</div><div class="ttdoc">add the key to a vector of all keys pressed</div><div class="ttdef"><b>Definition</b> WindowManager.cpp:15</div></div>
+<div class="ttc" id="aclassengine_1_1registry_html"><div class="ttname"><a href="classengine_1_1registry.html">engine::registry</a></div><div class="ttdoc">The registry class manages entities, their components and systems.</div><div class="ttdef"><b>Definition</b> registry.hpp:50</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

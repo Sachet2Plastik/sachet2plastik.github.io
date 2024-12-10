@@ -81,7 +81,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The registry class manages entities and their components in the game engine.  
+<p>The registry class manages entities, their components and systems.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;unordered_set&gt;</code><br />
@@ -90,9 +90,8 @@ $(function() {
 <code>#include &lt;queue&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;any&gt;</code><br />
-<code>#include &quot;WindowManager.hpp&quot;</code><br />
-<code>#include &quot;EntityManager.hpp&quot;</code><br />
-<code>#include &quot;../containers/SparseArray.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="WindowManager_8hpp_source.html">WindowManager.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SparseArray_8hpp_source.html">../containers/SparseArray.hpp</a>&quot;</code><br />
 <code>#include &quot;../entity.hpp&quot;</code><br />
 <code>#include &quot;built-in/setup.hpp&quot;</code><br />
 <code>#include &quot;Log.hpp&quot;</code><br />
@@ -104,10 +103,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1registry.html">engine::registry</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The registry class manages entities, their components and systems.  <a href="classengine_1_1registry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1View.html">engine::View&lt; Components &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classengine_1_1View.html" title="The View class is used to Query entities given a list of components.">View</a> class is used to Query entities given a list of components.  <a href="classengine_1_1View.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The registry class manages entities and their components in the game engine. </p>
-<p>The registry class is responsible for creating, destroying, and managing entities, as well as their associated components. It uses a sparse array data structure to efficiently store components for each entity. The registry class also provides functionality to register new components, add and remove components from entities, add new systems and run them. </p>
+<div class="textblock"><p>The registry class manages entities, their components and systems. </p>
+<p>The registry class is responsible for creating, destroying, and managing entities, as well as their associated components. It uses a sparse array data structure to efficiently store components for each entity. The registry class also provides functionality to register new components, add and remove components from entities, add new systems and run them.</p>
+<p>The View class is used usually within systems to query entities with specific components. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

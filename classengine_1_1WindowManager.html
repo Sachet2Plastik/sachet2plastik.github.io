@@ -82,32 +82,274 @@ $(function() {
   <div class="headertitle"><div class="title">engine::WindowManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classengine_1_1WindowManager.html" title="WindowManager class to manage the game window.">WindowManager</a> class to manage the game window.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="WindowManager_8hpp_source.html">WindowManager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4acc8935e4df150f8cfdb0fec347f959" id="r_a4acc8935e4df150f8cfdb0fec347f959"><td class="memItemLeft" align="right" valign="top"><a id="a4acc8935e4df150f8cfdb0fec347f959" name="a4acc8935e4df150f8cfdb0fec347f959"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WindowManager</b> (std::size_t <a class="el" href="classengine_1_1SparseArray.html">width</a>, std::size_t <a class="el" href="classengine_1_1SparseArray.html">height</a>, std::string <a class="el" href="classengine_1_1SparseArray.html">const</a> &amp;<a class="el" href="classengine_1_1SparseArray.html">title</a>)</td></tr>
-<tr class="separator:a4acc8935e4df150f8cfdb0fec347f959"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8470e43784ff1ccbd5d51c3f20219b6d" id="r_a8470e43784ff1ccbd5d51c3f20219b6d"><td class="memTemplParams" colspan="2"><a id="a8470e43784ff1ccbd5d51c3f20219b6d" name="a8470e43784ff1ccbd5d51c3f20219b6d"></a>
-template&lt;<a class="el" href="classengine_1_1SparseArray.html">typename</a> <a class="el" href="classengine_1_1SparseArray.html">Drawable</a> &gt; </td></tr>
-<tr class="memitem:a8470e43784ff1ccbd5d51c3f20219b6d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1SparseArray.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>draw</b> (<a class="el" href="classengine_1_1SparseArray.html">float</a> <a class="el" href="classengine_1_1SparseArray.html">const</a> &amp;<a class="el" href="classengine_1_1SparseArray.html">posx</a>, <a class="el" href="classengine_1_1SparseArray.html">float</a> <a class="el" href="classengine_1_1SparseArray.html">const</a> &amp;<a class="el" href="classengine_1_1SparseArray.html">posy</a>, <a class="el" href="classengine_1_1SparseArray.html">Drawable</a> &amp;drawable)</td></tr>
+<tr class="memitem:a6749235b97d99fd37e3364b5028c05f4" id="r_a6749235b97d99fd37e3364b5028c05f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6749235b97d99fd37e3364b5028c05f4">WindowManager</a> ()</td></tr>
+<tr class="memdesc:a6749235b97d99fd37e3364b5028c05f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Window Manager object.  <br /></td></tr>
+<tr class="separator:a6749235b97d99fd37e3364b5028c05f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0edef246cf50ce5fb320641e34a0344b" id="r_a0edef246cf50ce5fb320641e34a0344b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0edef246cf50ce5fb320641e34a0344b">WindowManager</a> (std::size_t width, std::size_t height, std::string const &amp;title, unsigned int framerate)</td></tr>
+<tr class="memdesc:a0edef246cf50ce5fb320641e34a0344b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Window Manager object.  <br /></td></tr>
+<tr class="separator:a0edef246cf50ce5fb320641e34a0344b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8470e43784ff1ccbd5d51c3f20219b6d" id="r_a8470e43784ff1ccbd5d51c3f20219b6d"><td class="memTemplParams" colspan="2">template&lt;typename Drawable &gt; </td></tr>
+<tr class="memitem:a8470e43784ff1ccbd5d51c3f20219b6d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8470e43784ff1ccbd5d51c3f20219b6d">draw</a> (float const &amp;posx, float const &amp;posy, Drawable &amp;drawable)</td></tr>
+<tr class="memdesc:a8470e43784ff1ccbd5d51c3f20219b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a sfml drawable object to the window given it's positions.  <br /></td></tr>
 <tr class="separator:a8470e43784ff1ccbd5d51c3f20219b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83570d40bd22ce7b44c4e82cec3d0b2b" id="r_a83570d40bd22ce7b44c4e82cec3d0b2b"><td class="memItemLeft" align="right" valign="top"><a id="a83570d40bd22ce7b44c4e82cec3d0b2b" name="a83570d40bd22ce7b44c4e82cec3d0b2b"></a>
-sf::RenderWindow &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_window</b> ()</td></tr>
+<tr class="memitem:aa983ebf5e895e0a1ae2e369a583ac92f" id="r_aa983ebf5e895e0a1ae2e369a583ac92f"><td class="memTemplParams" colspan="2">template&lt;typename Drawable &gt; </td></tr>
+<tr class="memitem:aa983ebf5e895e0a1ae2e369a583ac92f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa983ebf5e895e0a1ae2e369a583ac92f">draw</a> (sf::Vector2f const &amp;pos, Drawable &amp;drawable)</td></tr>
+<tr class="separator:aa983ebf5e895e0a1ae2e369a583ac92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83570d40bd22ce7b44c4e82cec3d0b2b" id="r_a83570d40bd22ce7b44c4e82cec3d0b2b"><td class="memItemLeft" align="right" valign="top">sf::RenderWindow &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83570d40bd22ce7b44c4e82cec3d0b2b">get_window</a> ()</td></tr>
+<tr class="memdesc:a83570d40bd22ce7b44c4e82cec3d0b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying sfml render window.  <br /></td></tr>
 <tr class="separator:a83570d40bd22ce7b44c4e82cec3d0b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e6c98d3aea587836f3a74eb320d164" id="r_ac8e6c98d3aea587836f3a74eb320d164"><td class="memItemLeft" align="right" valign="top"><a id="ac8e6c98d3aea587836f3a74eb320d164" name="ac8e6c98d3aea587836f3a74eb320d164"></a>
-<a class="el" href="classengine_1_1SparseArray.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>updateKeyPressed</b> (sf::Keyboard::Key)</td></tr>
+<tr class="memitem:ac8e6c98d3aea587836f3a74eb320d164" id="r_ac8e6c98d3aea587836f3a74eb320d164"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8e6c98d3aea587836f3a74eb320d164">updateKeyPressed</a> (sf::Keyboard::Key)</td></tr>
+<tr class="memdesc:ac8e6c98d3aea587836f3a74eb320d164"><td class="mdescLeft">&#160;</td><td class="mdescRight">add the key to a vector of all keys pressed  <br /></td></tr>
 <tr class="separator:ac8e6c98d3aea587836f3a74eb320d164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ed13cd2b258c734e08b50b2f7d304b2" id="r_a8ed13cd2b258c734e08b50b2f7d304b2"><td class="memItemLeft" align="right" valign="top"><a id="a8ed13cd2b258c734e08b50b2f7d304b2" name="a8ed13cd2b258c734e08b50b2f7d304b2"></a>
-<a class="el" href="classengine_1_1SparseArray.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>updateKeyReleased</b> (sf::Keyboard::Key)</td></tr>
+<tr class="memitem:a8ed13cd2b258c734e08b50b2f7d304b2" id="r_a8ed13cd2b258c734e08b50b2f7d304b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ed13cd2b258c734e08b50b2f7d304b2">updateKeyReleased</a> (sf::Keyboard::Key)</td></tr>
+<tr class="memdesc:a8ed13cd2b258c734e08b50b2f7d304b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the keyboard key from a vector of all keys pressed  <br /></td></tr>
 <tr class="separator:a8ed13cd2b258c734e08b50b2f7d304b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a382126a2b921138394e56c8318bf6887" id="r_a382126a2b921138394e56c8318bf6887"><td class="memItemLeft" align="right" valign="top"><a id="a382126a2b921138394e56c8318bf6887" name="a382126a2b921138394e56c8318bf6887"></a>
-<a class="el" href="classengine_1_1SparseArray.html">class</a>&#160;</td><td class="memItemRight" valign="bottom"><b>registry</b></td></tr>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>registry</b></td></tr>
 <tr class="separator:a382126a2b921138394e56c8318bf6887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classengine_1_1WindowManager.html" title="WindowManager class to manage the game window.">WindowManager</a> class to manage the game window. </p>
+<p>The <a class="el" href="classengine_1_1WindowManager.html" title="WindowManager class to manage the game window.">WindowManager</a> class is responsible for creating and managing the game window. It handles the window events and provides methods to draw entities onto the window. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6749235b97d99fd37e3364b5028c05f4" name="a6749235b97d99fd37e3364b5028c05f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6749235b97d99fd37e3364b5028c05f4">&#9670;&#160;</a></span>WindowManager() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::WindowManager::WindowManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new Window Manager object. </p>
+<p>Default constructor creates a 1920, 1080 window named "R-Type" and set it's framerate at 60. </p>
+
+</div>
+</div>
+<a id="a0edef246cf50ce5fb320641e34a0344b" name="a0edef246cf50ce5fb320641e34a0344b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0edef246cf50ce5fb320641e34a0344b">&#9670;&#160;</a></span>WindowManager() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">engine::WindowManager::WindowManager </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>width</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>height</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string const &amp;</td>          <td class="paramname"><span class="paramname"><em>title</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>framerate</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new Window Manager object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>Width of the window </td></tr>
+    <tr><td class="paramname">height</td><td>Height of the window </td></tr>
+    <tr><td class="paramname">title</td><td>Title of the window </td></tr>
+    <tr><td class="paramname">framerate</td><td>Framerate limit </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8470e43784ff1ccbd5d51c3f20219b6d" name="a8470e43784ff1ccbd5d51c3f20219b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8470e43784ff1ccbd5d51c3f20219b6d">&#9670;&#160;</a></span>draw() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Drawable &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::WindowManager::draw </td>
+          <td>(</td>
+          <td class="paramtype">float const &amp;</td>          <td class="paramname"><span class="paramname"><em>posx</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float const &amp;</td>          <td class="paramname"><span class="paramname"><em>posy</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable &amp;</td>          <td class="paramname"><span class="paramname"><em>drawable</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draw a sfml drawable object to the window given it's positions. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Drawable</td><td>A sfml drawable object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">posx</td><td>x coordinate </td></tr>
+    <tr><td class="paramname">posy</td><td>y coordinate </td></tr>
+    <tr><td class="paramname">drawable</td><td>sfml drawable object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa983ebf5e895e0a1ae2e369a583ac92f" name="aa983ebf5e895e0a1ae2e369a583ac92f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa983ebf5e895e0a1ae2e369a583ac92f">&#9670;&#160;</a></span>draw() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Drawable &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::WindowManager::draw </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f const &amp;</td>          <td class="paramname"><span class="paramname"><em>pos</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Drawable &amp;</td>          <td class="paramname"><span class="paramname"><em>drawable</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Drawable</td><td>Draw a sfml drawable object to the window given it's positions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Vector2f of position </td></tr>
+    <tr><td class="paramname">drawable</td><td>sfml drawable object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a83570d40bd22ce7b44c4e82cec3d0b2b" name="a83570d40bd22ce7b44c4e82cec3d0b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83570d40bd22ce7b44c4e82cec3d0b2b">&#9670;&#160;</a></span>get_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::RenderWindow &amp; engine::WindowManager::get_window </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the underlying sfml render window. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the underlying sfml render window </dd></dl>
+
+</div>
+</div>
+<a id="ac8e6c98d3aea587836f3a74eb320d164" name="ac8e6c98d3aea587836f3a74eb320d164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e6c98d3aea587836f3a74eb320d164">&#9670;&#160;</a></span>updateKeyPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::WindowManager::updateKeyPressed </td>
+          <td>(</td>
+          <td class="paramtype">sf::Keyboard::Key</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>add the key to a vector of all keys pressed </p>
+<dl class="section warning"><dt>Warning</dt><dd>this is normaly used by the registry no need to manualy add a key </dd></dl>
+
+</div>
+</div>
+<a id="a8ed13cd2b258c734e08b50b2f7d304b2" name="a8ed13cd2b258c734e08b50b2f7d304b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed13cd2b258c734e08b50b2f7d304b2">&#9670;&#160;</a></span>updateKeyReleased()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void engine::WindowManager::updateKeyReleased </td>
+          <td>(</td>
+          <td class="paramtype">sf::Keyboard::Key</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove the keyboard key from a vector of all keys pressed </p>
+<dl class="section warning"><dt>Warning</dt><dd>this is normaly used by the registry no need to manualy remove a key </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/sdacalor--fourcade/Documents/delivery/tek3/R-Type/r-type/client/src/Engine/registry/<a class="el" href="WindowManager_8hpp_source.html">WindowManager.hpp</a></li>
 <li>/home/sdacalor--fourcade/Documents/delivery/tek3/R-Type/r-type/client/src/Engine/registry/<b>WindowManager.cpp</b></li>
