@@ -93,6 +93,12 @@ Public Types</h2></td></tr>
 <tr class="memitem:a175918936009a07d2cfb6591de6c3eb8" id="r_a175918936009a07d2cfb6591de6c3eb8"><td class="memItemLeft" align="right" valign="top"><a id="a175918936009a07d2cfb6591de6c3eb8" name="a175918936009a07d2cfb6591de6c3eb8"></a>
 <a class="el" href="#a5817199633292ae959465e482b172ff2">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>entity_t</b> = size_t</td></tr>
 <tr class="separator:a175918936009a07d2cfb6591de6c3eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0c86433cc00631d2fd4544666510e9" id="r_a7a0c86433cc00631d2fd4544666510e9"><td class="memItemLeft" align="right" valign="top"><a id="a7a0c86433cc00631d2fd4544666510e9" name="a7a0c86433cc00631d2fd4544666510e9"></a>
+<a class="el" href="#a5817199633292ae959465e482b172ff2">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TextureManager</b> = <a class="el" href="classengine_1_1ResourcesManager.html">ResourcesManager</a>&lt;sf::Texture&gt;</td></tr>
+<tr class="separator:a7a0c86433cc00631d2fd4544666510e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cada64735ec2c548b3b4affeac6d304" id="r_a5cada64735ec2c548b3b4affeac6d304"><td class="memItemLeft" align="right" valign="top"><a id="a5cada64735ec2c548b3b4affeac6d304" name="a5cada64735ec2c548b3b4affeac6d304"></a>
+<a class="el" href="#a5817199633292ae959465e482b172ff2">using</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SoundManager</b> = <a class="el" href="classengine_1_1ResourcesManager.html">ResourcesManager</a>&lt;sf::SoundBuffer&gt;</td></tr>
+<tr class="separator:a5cada64735ec2c548b3b4affeac6d304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -132,12 +138,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a1fcd8d6a6cf3b5ac9d842850ebe379"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4a1fcd8d6a6cf3b5ac9d842850ebe379">add_system</a> (SystemHierarchy <a class="el" href="#a5817199633292ae959465e482b172ff2">hierarchy</a>, <a class="el" href="#a5817199633292ae959465e482b172ff2">Function</a> &amp;&amp;<a class="el" href="#a5817199633292ae959465e482b172ff2">f</a>)</td></tr>
 <tr class="memdesc:a4a1fcd8d6a6cf3b5ac9d842850ebe379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a system to the registry.  <br /></td></tr>
 <tr class="separator:a4a1fcd8d6a6cf3b5ac9d842850ebe379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac02ae317cb5eb9821a88c8a3bd09910e" id="r_ac02ae317cb5eb9821a88c8a3bd09910e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac02ae317cb5eb9821a88c8a3bd09910e">run_systems</a> ()</td></tr>
-<tr class="memdesc:ac02ae317cb5eb9821a88c8a3bd09910e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs all registered system.  <br /></td></tr>
-<tr class="separator:ac02ae317cb5eb9821a88c8a3bd09910e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8391da37c7afe8da5b9d11ed80a388a9" id="r_a8391da37c7afe8da5b9d11ed80a388a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8391da37c7afe8da5b9d11ed80a388a9">running_systems</a> ()</td></tr>
+<tr class="memdesc:a8391da37c7afe8da5b9d11ed80a388a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs all registered running systems.  <br /></td></tr>
+<tr class="separator:a8391da37c7afe8da5b9d11ed80a388a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e55d4e8edf84a582d1073a4b93bf1e" id="r_af1e55d4e8edf84a582d1073a4b93bf1e"><td class="memItemLeft" align="right" valign="top"><a id="af1e55d4e8edf84a582d1073a4b93bf1e" name="af1e55d4e8edf84a582d1073a4b93bf1e"></a>
+<a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>startup_systems</b> ()</td></tr>
+<tr class="memdesc:af1e55d4e8edf84a582d1073a4b93bf1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs all registered startup systems. <br /></td></tr>
+<tr class="separator:af1e55d4e8edf84a582d1073a4b93bf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fffb055bcbf152c4392118e93ef9a8" id="r_ae7fffb055bcbf152c4392118e93ef9a8"><td class="memItemLeft" align="right" valign="top"><a id="ae7fffb055bcbf152c4392118e93ef9a8" name="ae7fffb055bcbf152c4392118e93ef9a8"></a>
+<a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown_systems</b> ()</td></tr>
+<tr class="memdesc:ae7fffb055bcbf152c4392118e93ef9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs all registered shutdown systems. <br /></td></tr>
+<tr class="separator:ae7fffb055bcbf152c4392118e93ef9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d8115cd5421c23c296eb6e0cbf847b2" id="r_a4d8115cd5421c23c296eb6e0cbf847b2"><td class="memItemLeft" align="right" valign="top">entity_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d8115cd5421c23c296eb6e0cbf847b2">spawn_entity</a> ()</td></tr>
 <tr class="memdesc:a4d8115cd5421c23c296eb6e0cbf847b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawn a raw new entity.  <br /></td></tr>
 <tr class="separator:a4d8115cd5421c23c296eb6e0cbf847b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee864ecaf23d1718d8496494e2b48763" id="r_aee864ecaf23d1718d8496494e2b48763"><td class="memItemLeft" align="right" valign="top">entity_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee864ecaf23d1718d8496494e2b48763">spawn_entity_from_file</a> (<a class="el" href="#a5817199633292ae959465e482b172ff2">const</a> std::string &amp;<a class="el" href="#a5817199633292ae959465e482b172ff2">filename</a>)</td></tr>
+<tr class="memdesc:aee864ecaf23d1718d8496494e2b48763"><td class="mdescLeft">&#160;</td><td class="mdescRight">spawn a new entity from a JSON file  <br /></td></tr>
+<tr class="separator:aee864ecaf23d1718d8496494e2b48763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3caca6b70d42c9faf66b4b6a538ce0f3" id="r_a3caca6b70d42c9faf66b4b6a538ce0f3"><td class="memTemplParams" colspan="2">template&lt;typename... Component&gt; </td></tr>
 <tr class="memitem:a3caca6b70d42c9faf66b4b6a538ce0f3"><td class="memTemplItemLeft" align="right" valign="top">entity_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3caca6b70d42c9faf66b4b6a538ce0f3">generate_entity</a> (<a class="el" href="#a5817199633292ae959465e482b172ff2">Component</a> &amp;&amp;...<a class="el" href="#a5817199633292ae959465e482b172ff2">components</a>)</td></tr>
 <tr class="memdesc:a3caca6b70d42c9faf66b4b6a538ce0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an entity with the given components.  <br /></td></tr>
@@ -151,9 +168,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a993d53600d68b1b8df33fd4118ff445f" id="r_a993d53600d68b1b8df33fd4118ff445f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a993d53600d68b1b8df33fd4118ff445f">run</a> ()</td></tr>
 <tr class="memdesc:a993d53600d68b1b8df33fd4118ff445f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the engine.  <br /></td></tr>
 <tr class="separator:a993d53600d68b1b8df33fd4118ff445f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc1ae6bf5798c2622ae212df1a113672" id="r_acc1ae6bf5798c2622ae212df1a113672"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1WindowManager.html">WindowManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc1ae6bf5798c2622ae212df1a113672">get_window_manager</a> ()</td></tr>
-<tr class="memdesc:acc1ae6bf5798c2622ae212df1a113672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the window manager.  <br /></td></tr>
-<tr class="separator:acc1ae6bf5798c2622ae212df1a113672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b385b921c25efaf38a4585ffca6a58" id="r_ae8b385b921c25efaf38a4585ffca6a58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1RenderManager.html">RenderManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8b385b921c25efaf38a4585ffca6a58">get_window_manager</a> ()</td></tr>
+<tr class="memdesc:ae8b385b921c25efaf38a4585ffca6a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the window manager.  <br /></td></tr>
+<tr class="separator:ae8b385b921c25efaf38a4585ffca6a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2dc614643c7261e26a467a58bd61c2f" id="r_ad2dc614643c7261e26a467a58bd61c2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1ResourcesManager.html">TextureManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2dc614643c7261e26a467a58bd61c2f">get_texture_manager</a> ()</td></tr>
+<tr class="memdesc:ad2dc614643c7261e26a467a58bd61c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the texture manager.  <br /></td></tr>
+<tr class="separator:ad2dc614643c7261e26a467a58bd61c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452d9df7f2d8ce13b423595226e45418" id="r_a452d9df7f2d8ce13b423595226e45418"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1ResourcesManager.html">SoundManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a452d9df7f2d8ce13b423595226e45418">get_sound_manager</a> ()</td></tr>
+<tr class="memdesc:a452d9df7f2d8ce13b423595226e45418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sound manager.  <br /></td></tr>
+<tr class="separator:a452d9df7f2d8ce13b423595226e45418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50cdd9d5f3fe7f8fb41d47d18d13a6f3" id="r_a50cdd9d5f3fe7f8fb41d47d18d13a6f3"><td class="memItemLeft" align="right" valign="top">sf::Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50cdd9d5f3fe7f8fb41d47d18d13a6f3">dt</a> () <a class="el" href="#a5817199633292ae959465e482b172ff2">const</a></td></tr>
 <tr class="memdesc:a50cdd9d5f3fe7f8fb41d47d18d13a6f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the Delta time  <br /></td></tr>
 <tr class="separator:a50cdd9d5f3fe7f8fb41d47d18d13a6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,9 +184,24 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> ()</td></tr>
 <tr class="memdesc:a7234bed614f73cc48f790b906ba8e0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the basics of the ecs. <br /></td></tr>
 <tr class="separator:a7234bed614f73cc48f790b906ba8e0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1b1570c88fc145aff63ff0c9b1ef9e" id="r_a5d1b1570c88fc145aff63ff0c9b1ef9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d1b1570c88fc145aff63ff0c9b1ef9e">initialize_from_file</a> (<a class="el" href="#a5817199633292ae959465e482b172ff2">const</a> std::string &amp;<a class="el" href="#a5817199633292ae959465e482b172ff2">init_file</a>)</td></tr>
+<tr class="memdesc:a5d1b1570c88fc145aff63ff0c9b1ef9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize some of the ecs based on a init json file.  <br /></td></tr>
+<tr class="separator:a5d1b1570c88fc145aff63ff0c9b1ef9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a605827fa2b06c46c99d53ff511563ef1" id="r_a605827fa2b06c46c99d53ff511563ef1"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a605827fa2b06c46c99d53ff511563ef1">entity_count</a> () <a class="el" href="#a5817199633292ae959465e482b172ff2">const</a></td></tr>
 <tr class="memdesc:a605827fa2b06c46c99d53ff511563ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of active entities.  <br /></td></tr>
 <tr class="separator:a605827fa2b06c46c99d53ff511563ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabed8faa88513040378db0cb152e8bd8" id="r_aabed8faa88513040378db0cb152e8bd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabed8faa88513040378db0cb152e8bd8">add_scene</a> (<a class="el" href="#a5817199633292ae959465e482b172ff2">const</a> std::string &amp;<a class="el" href="#a5817199633292ae959465e482b172ff2">name</a>, std::unique_ptr&lt; <a class="el" href="classengine_1_1Scene.html">Scene</a> &gt; <a class="el" href="#a5817199633292ae959465e482b172ff2">scene</a>)</td></tr>
+<tr class="memdesc:aabed8faa88513040378db0cb152e8bd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new scene to the scene manager.  <br /></td></tr>
+<tr class="separator:aabed8faa88513040378db0cb152e8bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a5c27069eb8d0cc2852516de56c1a0" id="r_a04a5c27069eb8d0cc2852516de56c1a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04a5c27069eb8d0cc2852516de56c1a0">remove_scene</a> (<a class="el" href="#a5817199633292ae959465e482b172ff2">const</a> std::string &amp;<a class="el" href="#a5817199633292ae959465e482b172ff2">name</a>)</td></tr>
+<tr class="memdesc:a04a5c27069eb8d0cc2852516de56c1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove a previously added scene  <br /></td></tr>
+<tr class="separator:a04a5c27069eb8d0cc2852516de56c1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51e9df45da7bffc82cc1b1b76baadaa" id="r_ae51e9df45da7bffc82cc1b1b76baadaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae51e9df45da7bffc82cc1b1b76baadaa">switch_scene</a> (<a class="el" href="#a5817199633292ae959465e482b172ff2">const</a> std::string &amp;<a class="el" href="#a5817199633292ae959465e482b172ff2">name</a>)</td></tr>
+<tr class="memdesc:ae51e9df45da7bffc82cc1b1b76baadaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">switch scene  <br /></td></tr>
+<tr class="separator:ae51e9df45da7bffc82cc1b1b76baadaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f8f394b7baa133427a60034529c4b2" id="r_aa3f8f394b7baa133427a60034529c4b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3f8f394b7baa133427a60034529c4b2">reset</a> ()</td></tr>
+<tr class="memdesc:aa3f8f394b7baa133427a60034529c4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of the ecs (usually used internally when the scene is being changed)  <br /></td></tr>
+<tr class="separator:aa3f8f394b7baa133427a60034529c4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10d142da9fcd30b68e58becdfde393ba" id="r_a10d142da9fcd30b68e58becdfde393ba"><td class="memTemplParams" colspan="2"><a id="a10d142da9fcd30b68e58becdfde393ba" name="a10d142da9fcd30b68e58becdfde393ba"></a>
 template&lt;class Component &gt; </td></tr>
 <tr class="memitem:a10d142da9fcd30b68e58becdfde393ba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classengine_1_1SparseArray.html">SparseArray</a>&lt; Component &gt; const &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_components</b> () const</td></tr>
@@ -212,6 +250,37 @@ template&lt;<a class="el" href="#a5817199633292ae959465e482b172ff2">typename</a>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">invalid_argument</td><td>when given ID not found </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aabed8faa88513040378db0cb152e8bd8" name="aabed8faa88513040378db0cb152e8bd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabed8faa88513040378db0cb152e8bd8">&#9670;&#160;</a></span>add_scene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a> engine::registry::add_scene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a5817199633292ae959465e482b172ff2">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classengine_1_1Scene.html">Scene</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>scene</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a new scene to the scene manager. </p>
+<p>With this function you can add multiple scene to work with</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the scene to add </td></tr>
+    <tr><td class="paramname">scene</td><td>the actual scene to add (unique_ptr) </td></tr>
   </table>
   </dd>
 </dl>
@@ -520,8 +589,8 @@ template&lt;class Component &gt; </div>
 
 </div>
 </div>
-<a id="acc1ae6bf5798c2622ae212df1a113672" name="acc1ae6bf5798c2622ae212df1a113672"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc1ae6bf5798c2622ae212df1a113672">&#9670;&#160;</a></span>get_window_manager()</h2>
+<a id="a452d9df7f2d8ce13b423595226e45418" name="a452d9df7f2d8ce13b423595226e45418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a452d9df7f2d8ce13b423595226e45418">&#9670;&#160;</a></span>get_sound_manager()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -530,7 +599,63 @@ template&lt;class Component &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classengine_1_1WindowManager.html">WindowManager</a> &amp; engine::registry::get_window_manager </td>
+          <td class="memname"><a class="el" href="classengine_1_1ResourcesManager.html">SoundManager</a> &amp; engine::registry::get_sound_manager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the sound manager. </p>
+<dl class="section return"><dt>Returns</dt><dd>The reference to the sound manager </dd></dl>
+
+</div>
+</div>
+<a id="ad2dc614643c7261e26a467a58bd61c2f" name="ad2dc614643c7261e26a467a58bd61c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2dc614643c7261e26a467a58bd61c2f">&#9670;&#160;</a></span>get_texture_manager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classengine_1_1ResourcesManager.html">TextureManager</a> &amp; engine::registry::get_texture_manager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the texture manager. </p>
+<dl class="section return"><dt>Returns</dt><dd>The reference to the texture manager </dd></dl>
+
+</div>
+</div>
+<a id="ae8b385b921c25efaf38a4585ffca6a58" name="ae8b385b921c25efaf38a4585ffca6a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8b385b921c25efaf38a4585ffca6a58">&#9670;&#160;</a></span>get_window_manager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classengine_1_1RenderManager.html">RenderManager</a> &amp; engine::registry::get_window_manager </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -545,6 +670,31 @@ template&lt;class Component &gt; </div>
 
 <p>Get the window manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>The reference to the window manager </dd></dl>
+
+</div>
+</div>
+<a id="a5d1b1570c88fc145aff63ff0c9b1ef9e" name="a5d1b1570c88fc145aff63ff0c9b1ef9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1b1570c88fc145aff63ff0c9b1ef9e">&#9670;&#160;</a></span>initialize_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a> engine::registry::initialize_from_file </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a5817199633292ae959465e482b172ff2">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>init_file</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize some of the ecs based on a init json file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">init_file</td><td>an initialization json file </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -647,6 +797,51 @@ template&lt;<a class="el" href="#a5817199633292ae959465e482b172ff2">typename</a>
 
 </div>
 </div>
+<a id="a04a5c27069eb8d0cc2852516de56c1a0" name="a04a5c27069eb8d0cc2852516de56c1a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a5c27069eb8d0cc2852516de56c1a0">&#9670;&#160;</a></span>remove_scene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a> engine::registry::remove_scene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a5817199633292ae959465e482b172ff2">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove a previously added scene </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the scene to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa3f8f394b7baa133427a60034529c4b2" name="aa3f8f394b7baa133427a60034529c4b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3f8f394b7baa133427a60034529c4b2">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a> engine::registry::reset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset the state of the ecs (usually used internally when the scene is being changed) </p>
+<dl class="section warning"><dt>Warning</dt><dd>CAUTION: if you use this function manually, everything registered is wiped. </dd></dl>
+
+</div>
+</div>
 <a id="a993d53600d68b1b8df33fd4118ff445f" name="a993d53600d68b1b8df33fd4118ff445f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a993d53600d68b1b8df33fd4118ff445f">&#9670;&#160;</a></span>run()</h2>
 
@@ -667,14 +862,14 @@ template&lt;<a class="el" href="#a5817199633292ae959465e482b172ff2">typename</a>
 
 </div>
 </div>
-<a id="ac02ae317cb5eb9821a88c8a3bd09910e" name="ac02ae317cb5eb9821a88c8a3bd09910e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac02ae317cb5eb9821a88c8a3bd09910e">&#9670;&#160;</a></span>run_systems()</h2>
+<a id="a8391da37c7afe8da5b9d11ed80a388a9" name="a8391da37c7afe8da5b9d11ed80a388a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8391da37c7afe8da5b9d11ed80a388a9">&#9670;&#160;</a></span>running_systems()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a> engine::registry::run_systems </td>
+          <td class="memname"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a> engine::registry::running_systems </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -682,7 +877,7 @@ template&lt;<a class="el" href="#a5817199633292ae959465e482b172ff2">typename</a>
       </table>
 </div><div class="memdoc">
 
-<p>Runs all registered system. </p>
+<p>Runs all registered running systems. </p>
 <p>Usually used for manual debug purposes since this function is called in the 'run' loop </p>
 
 </div>
@@ -704,6 +899,57 @@ template&lt;<a class="el" href="#a5817199633292ae959465e482b172ff2">typename</a>
 
 <p>Spawn a raw new entity. </p>
 <dl class="section return"><dt>Returns</dt><dd>The ID of the newly created entity </dd></dl>
+
+</div>
+</div>
+<a id="aee864ecaf23d1718d8496494e2b48763" name="aee864ecaf23d1718d8496494e2b48763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee864ecaf23d1718d8496494e2b48763">&#9670;&#160;</a></span>spawn_entity_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">registry::entity_t engine::registry::spawn_entity_from_file </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a5817199633292ae959465e482b172ff2">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>spawn a new entity from a JSON file </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the path to the entity config file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The ID of the newly created entity </dd></dl>
+
+</div>
+</div>
+<a id="ae51e9df45da7bffc82cc1b1b76baadaa" name="ae51e9df45da7bffc82cc1b1b76baadaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51e9df45da7bffc82cc1b1b76baadaa">&#9670;&#160;</a></span>switch_scene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5817199633292ae959465e482b172ff2">void</a> engine::registry::switch_scene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a5817199633292ae959465e482b172ff2">const</a> std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>switch scene </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the scene to switch to </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

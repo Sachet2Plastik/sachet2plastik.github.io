@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['drawable_0',['drawable',['../structcomponent_1_1drawable.html',1,'component']]]
+  ['entity_0',['Entity',['../classEntity.html',1,'']]],
+  ['entityfactory_1',['EntityFactory',['../classengine_1_1EntityFactory.html',1,'engine']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['updatekeypressed_0',['updateKeyPressed',['../classengine_1_1WindowManager.html#ac8e6c98d3aea587836f3a74eb320d164',1,'engine::WindowManager']]],
-  ['updatekeyreleased_1',['updateKeyReleased',['../classengine_1_1WindowManager.html#a8ed13cd2b258c734e08b50b2f7d304b2',1,'engine::WindowManager']]]
+  ['view_0',['View',['../classengine_1_1View.html',1,'engine::View&lt; Components &gt;'],['../classengine_1_1View.html#a51018470d59f5e1ca53e4d43bc2b9c6b',1,'engine::View::View()']]],
+  ['view_1',['view',['../classengine_1_1registry.html#abc61a2c9f11985aaaa4282ce9aa2c81c',1,'engine::registry']]]
 ];

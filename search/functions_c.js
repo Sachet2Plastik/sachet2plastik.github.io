@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['view_0',['View',['../classengine_1_1View.html#a51018470d59f5e1ca53e4d43bc2b9c6b',1,'engine::View']]],
-  ['view_1',['view',['../classengine_1_1registry.html#abc61a2c9f11985aaaa4282ce9aa2c81c',1,'engine::registry']]]
+  ['unload_0',['unload',['../classengine_1_1ResourcesManager.html#afcf002a11b5ce8786a07fff4937fef69',1,'engine::ResourcesManager']]],
+  ['updatekeypressed_1',['updateKeyPressed',['../classengine_1_1RenderManager.html#aa3062b2c1751b9026c0bd6ea8a2c1141',1,'engine::RenderManager']]],
+  ['updatekeyreleased_2',['updateKeyReleased',['../classengine_1_1RenderManager.html#a90f1b77c2785f1daf69a3c334cae629f',1,'engine::RenderManager']]]
 ];
