@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['initfactory_0',['InitFactory',['../classengine_1_1InitFactory.html',1,'engine']]]
+  ['entity_0',['Entity',['../classEntity.html',1,'']]],
+  ['entityfactory_1',['EntityFactory',['../classengine_1_1EntityFactory.html',1,'engine']]]
 ];

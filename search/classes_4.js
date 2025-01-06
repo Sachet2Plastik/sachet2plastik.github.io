@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['scene_0',['Scene',['../classengine_1_1Scene.html',1,'engine']]],
-  ['scenemanager_1',['SceneManager',['../classengine_1_1SceneManager.html',1,'engine']]],
-  ['sparsearray_2',['SparseArray',['../classengine_1_1SparseArray.html',1,'engine']]],
-  ['sparsearray_3c_20size_5ftype_2c_20std_3a_3aallocator_3c_20component_20_3e_20_3e_3',['SparseArray&lt; size_type, std::allocator&lt; Component &gt; &gt;',['../classengine_1_1SparseArray.html',1,'engine']]],
-  ['sparseset_4',['SparseSet',['../classengine_1_1SparseSet.html',1,'engine']]]
+  ['registry_0',['registry',['../classengine_1_1registry.html',1,'engine']]],
+  ['rendermanager_1',['RenderManager',['../classengine_1_1RenderManager.html',1,'engine']]],
+  ['resourcesmanager_2',['ResourcesManager',['../classengine_1_1ResourcesManager.html',1,'engine']]],
+  ['resourcesmanager_3c_20sf_3a_3asoundbuffer_20_3e_3',['ResourcesManager&lt; sf::SoundBuffer &gt;',['../classengine_1_1ResourcesManager.html',1,'engine']]],
+  ['resourcesmanager_3c_20sf_3a_3atexture_20_3e_4',['ResourcesManager&lt; sf::Texture &gt;',['../classengine_1_1ResourcesManager.html',1,'engine']]]
 ];
