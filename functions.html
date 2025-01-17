@@ -93,6 +93,7 @@ $(function() {
 <li>cend()&#160;:&#160;<a class="el" href="classengine_1_1SparseArray.html#af30cc76f09367d5ae8d665f516d269be">engine::SparseArray&lt; Component, Allocator &gt;</a></li>
 <li>clear()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#a40017484b24b6a9b3cbfb95aec236883">engine::RenderManager</a></li>
 <li>Cmusic()&#160;:&#160;<a class="el" href="structcomponent_1_1Cmusic.html#a506d8d6c8a1e1b0d8a893dc825ac2267">component::Cmusic</a></li>
+<li>connectJoystick()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#ae0e52ec145345387d58ef342cd0a2654">engine::RenderManager</a></li>
 <li>contains()&#160;:&#160;<a class="el" href="classengine_1_1SparseArray.html#af38c5c1991dca00a32463fc38ab42a97">engine::SparseArray&lt; Component, Allocator &gt;</a>, <a class="el" href="classengine_1_1View.html#ac0e65084342f5aee4cb87d6de5ab8552">engine::View&lt; Components &gt;</a></li>
 <li>createEntityFromFile()&#160;:&#160;<a class="el" href="classengine_1_1EntityFactory.html#a35d73d50bb8753670a3807e20fa386f4">engine::EntityFactory</a></li>
 <li>Csound()&#160;:&#160;<a class="el" href="structcomponent_1_1Csound.html#a3459ca32e70bb159122f40b51457451e">component::Csound</a></li>
@@ -101,6 +102,7 @@ $(function() {
 
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
+<li>disconnectJoystick()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#a4ad59dc009410916cc0a57c8a080ed47">engine::RenderManager</a></li>
 <li>display()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#acaf9a4b9306b12d5f6ac0ac712e72a5a">engine::RenderManager</a></li>
 <li>draw()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#a31e8f7e546c6d941d729dc46a21bc012">engine::RenderManager</a></li>
 <li>dt()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#a50cdd9d5f3fe7f8fb41d47d18d13a6f3">engine::registry</a></li>
@@ -110,6 +112,7 @@ $(function() {
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
 <li>emplace_at()&#160;:&#160;<a class="el" href="classengine_1_1SparseArray.html#adbcaaa5ef66684b5b879d93112163af5">engine::SparseArray&lt; Component, Allocator &gt;</a></li>
 <li>emplace_component()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#aec75106d08efbf5116dc9356bd9995d9">engine::registry</a></li>
+<li>empty_check()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#a4f541f97c6c50d3609690e60c12ac1ae">engine::registry</a></li>
 <li>end()&#160;:&#160;<a class="el" href="classengine_1_1SparseArray.html#af67555c70b00b0e506147cc13b30d0bf">engine::SparseArray&lt; Component, Allocator &gt;</a>, <a class="el" href="classengine_1_1View.html#a19fd71ef27ff8a3f16eb0a9899208a41">engine::View&lt; Components &gt;</a></li>
 <li>Entity()&#160;:&#160;<a class="el" href="classEntity.html#a9b2c2688843e655fe8e4d8c561b36ee9">Entity</a></li>
 <li>entity_count()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#a605827fa2b06c46c99d53ff511563ef1">engine::registry</a></li>
@@ -124,13 +127,19 @@ $(function() {
 <li>get()&#160;:&#160;<a class="el" href="classengine_1_1View.html#ae7dac4fab398a054530b1762c32c333b">engine::View&lt; Components &gt;</a></li>
 <li>get_component()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#a05be1262beb1edb82e93b524c2c3adba">engine::registry</a></li>
 <li>get_components()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#a5817199633292ae959465e482b172ff2">engine::registry</a></li>
+<li>get_connected_joysticks()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#a617bc9634500e7b1be2c9b589b504101">engine::registry</a></li>
 <li>get_current_scene()&#160;:&#160;<a class="el" href="classengine_1_1SceneManager.html#aa6503c07d51e2807c71bc584ff2d2be0">engine::SceneManager</a></li>
 <li>get_index()&#160;:&#160;<a class="el" href="classengine_1_1SparseArray.html#ad833e31cdeccb7554a0f5586de438577">engine::SparseArray&lt; Component, Allocator &gt;</a></li>
+<li>get_joystick_buttons()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#a8ffe4c5569ca16998b272be2873f5b42">engine::registry</a></li>
+<li>get_joystick_moved()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#ae437287a355b78cec1d12391c05e0c5d">engine::registry</a></li>
 <li>get_keyboard()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#ae6cefa45eb48710ad530c8241a0d98ae">engine::registry</a></li>
-<li>get_sound_manager()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#a452d9df7f2d8ce13b423595226e45418">engine::registry</a></li>
+<li>get_mouse_buttons()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#ad04a11b1a684d45fcebeea761ce0f55f">engine::registry</a></li>
+<li>get_mouse_position()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#a4dd4a2e075f7e27a06f715abd9970290">engine::registry</a></li>
+<li>get_mouse_scroll()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#aa94f1464988d677fb34360e9ef6e0634">engine::registry</a></li>
 <li>get_texture_manager()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#ad2dc614643c7261e26a467a58bd61c2f">engine::registry</a></li>
 <li>get_window()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#ab0af4e4d4f513a6c97750586547ac4ea">engine::RenderManager</a></li>
 <li>get_window_manager()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#ae8b385b921c25efaf38a4585ffca6a58">engine::registry</a></li>
+<li>getMouseWheel()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#ac5b067f85c5228f0541f8d3f3caff8bf">engine::RenderManager</a></li>
 </ul>
 
 
@@ -150,6 +159,8 @@ $(function() {
 
 <h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
 <li>load()&#160;:&#160;<a class="el" href="classengine_1_1ResourcesManager.html#ae1980a431408424e96705795627a2e0f">engine::ResourcesManager&lt; Resource &gt;</a></li>
+<li>load_music()&#160;:&#160;<a class="el" href="classengine_1_1AudioManager.html#a721ca011c70a2fb9fd94624119198292">engine::AudioManager</a></li>
+<li>load_sound()&#160;:&#160;<a class="el" href="classengine_1_1AudioManager.html#aff4401fbafe4fa70cd2e09a7631e760b">engine::AudioManager</a></li>
 </ul>
 
 
@@ -163,7 +174,11 @@ $(function() {
 
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
+<li>pause_music()&#160;:&#160;<a class="el" href="classengine_1_1AudioManager.html#a2839a9ccc804c6303c6ac2fccd98955d">engine::AudioManager</a></li>
+<li>pause_sound()&#160;:&#160;<a class="el" href="classengine_1_1AudioManager.html#a1ec4bd5133fe9648bd4a59671817f43a">engine::AudioManager</a></li>
 <li>play()&#160;:&#160;<a class="el" href="structcomponent_1_1CanimatedSprite.html#ae2668b6803f6d964e087da6fe660304f">component::CanimatedSprite</a></li>
+<li>play_music()&#160;:&#160;<a class="el" href="classengine_1_1AudioManager.html#a786c20d80bd5800a61a1f5e407b1c73b">engine::AudioManager</a></li>
+<li>play_sound()&#160;:&#160;<a class="el" href="classengine_1_1AudioManager.html#a9b594e8804292859a24b84a8b936d44c">engine::AudioManager</a></li>
 </ul>
 
 
@@ -180,14 +195,20 @@ $(function() {
 
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>server_run()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#a1dcb416fcb4bd4a29f091dce848e71dd">engine::registry</a></li>
 <li>set_frame_duration()&#160;:&#160;<a class="el" href="structcomponent_1_1animation.html#a74dd3ee96fa90ec6f86c3c40a82d6330">component::animation</a></li>
 <li>set_loop()&#160;:&#160;<a class="el" href="structcomponent_1_1animation.html#a668570fb949f0deb3988eb691d7ad8b6">component::animation</a></li>
+<li>set_music_volume()&#160;:&#160;<a class="el" href="classengine_1_1AudioManager.html#adbef33e494d3005a0b1953b74e126e53">engine::AudioManager</a></li>
+<li>set_sound_pitch()&#160;:&#160;<a class="el" href="classengine_1_1AudioManager.html#a5751a6ddc29669e9813040b1226453b9">engine::AudioManager</a></li>
+<li>set_sound_volume()&#160;:&#160;<a class="el" href="classengine_1_1AudioManager.html#a940f1612cd65824e3e0289176d88014f">engine::AudioManager</a></li>
 <li>shutdown_systems()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#ae7fffb055bcbf152c4392118e93ef9a8">engine::registry</a></li>
 <li>size()&#160;:&#160;<a class="el" href="classengine_1_1SparseArray.html#a2b46a6b3f25829114c7f67ff078daf5b">engine::SparseArray&lt; Component, Allocator &gt;</a>, <a class="el" href="classengine_1_1View.html#ad96c1c3c37be0fb8a6ca23816e787315">engine::View&lt; Components &gt;</a></li>
 <li>spawn_entity()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#a4d8115cd5421c23c296eb6e0cbf847b2">engine::registry</a></li>
 <li>spawn_entity_from_file()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#aee864ecaf23d1718d8496494e2b48763">engine::registry</a></li>
 <li>startup_systems()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#af1e55d4e8edf84a582d1073a4b93bf1e">engine::registry</a></li>
 <li>stop()&#160;:&#160;<a class="el" href="structcomponent_1_1CanimatedSprite.html#ab42a0d5869178d8de715f28e04d7d559">component::CanimatedSprite</a></li>
+<li>stop_music()&#160;:&#160;<a class="el" href="classengine_1_1AudioManager.html#ab158f2dafe0d621f0f69444bbb0bf981">engine::AudioManager</a></li>
+<li>stop_sound()&#160;:&#160;<a class="el" href="classengine_1_1AudioManager.html#ae91cd9255c1d873352f5116d608966b8">engine::AudioManager</a></li>
 <li>switch_scene()&#160;:&#160;<a class="el" href="classengine_1_1registry.html#ae51e9df45da7bffc82cc1b1b76baadaa">engine::registry</a>, <a class="el" href="classengine_1_1SceneManager.html#aafaa43dd848786485101fe2fc0931dd6">engine::SceneManager</a></li>
 <li>switch_to_next_scene()&#160;:&#160;<a class="el" href="classengine_1_1SceneManager.html#a8bf761dd7cdfd5cec0cff03d0bb5b988">engine::SceneManager</a></li>
 </ul>
@@ -196,8 +217,13 @@ $(function() {
 <h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
 <li>unload()&#160;:&#160;<a class="el" href="classengine_1_1ResourcesManager.html#afcf002a11b5ce8786a07fff4937fef69">engine::ResourcesManager&lt; Resource &gt;</a></li>
 <li>update()&#160;:&#160;<a class="el" href="structcomponent_1_1CanimatedSprite.html#a8eb3b97dd1d5c461ced19ef9c66669a7">component::CanimatedSprite</a></li>
+<li>updateJoystickButtonPressed()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#a35532bc22282344fa7f7d9cf95fa0933">engine::RenderManager</a></li>
+<li>updateJoystickButtonRelease()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#ada6b0f96366d55a2f4fa2a2c5ae5b97b">engine::RenderManager</a></li>
+<li>updateJoystickMoved()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#aec5dfdce45ab3f5c46f4c13a32807787">engine::RenderManager</a></li>
 <li>updateKeyPressed()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#aa3062b2c1751b9026c0bd6ea8a2c1141">engine::RenderManager</a></li>
 <li>updateKeyReleased()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#a90f1b77c2785f1daf69a3c334cae629f">engine::RenderManager</a></li>
+<li>updateMouseButtonPressed()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#ab098977a0e2ec96e5c44d948d63d6c43">engine::RenderManager</a></li>
+<li>updateMouseButtonReleased()&#160;:&#160;<a class="el" href="classengine_1_1RenderManager.html#affe03a47d7dc852626bb545e2b30852f">engine::RenderManager</a></li>
 </ul>
 
 

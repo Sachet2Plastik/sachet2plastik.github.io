@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['windowmanager_0',['WindowManager',['../classengine_1_1WindowManager.html',1,'engine']]]
+  ['view_0',['View',['../classengine_1_1View.html',1,'engine']]]
 ];
